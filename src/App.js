@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
+import NavBarHome from './Composants/NavBar/Navbar';
+import Home from './Composants/Pages/Home';
+import Women from './Composants/Category/women/womenproduct';
+import {Shop} from './Composants/Pages/Men/shop';
+import Kids from './Composants/Category/kids/kidsproduct';
+import {Cart} from './Composants/Pages/Cart/cart';
+import LoginSignup from './Composants/Pages/Auth/LoginSignUp';
+import { ShopContextProvider } from './Composants/context/shop-context';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <ShopContextProvider>
+  
+  <NavBarHome/>
+  <Routes>
+  <Route path='/' element={<Home/>}></Route>
+  <Route path='/womens' element={<Women/>}></Route>
+  <Route path='/mens' element={<Shop/>}></Route>
+  <Route path='/kids' element={<Kids/>}></Route>
+  <Route path='/LoginSignUp' element={<LoginSignup/>}></Route>
+  <Route path='/cart' element={<Cart/>}></Route>
+  </Routes>
+ 
+   </ShopContextProvider>
     </div>
   );
 }

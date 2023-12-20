@@ -1,0 +1,102 @@
+.shopTitle {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+}
+.products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.product {
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  place-items: center;
+  text-align: center;
+}
+
+.product img {
+  width: 300px;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.product .description {
+  text-align: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 741px) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .product {
+    margin: 20px; /* Ajustez la marge selon vos besoins */
+  }
+}
+
+/* Pour écrans moyens, affiche 2 produits par ligne */
+@media (max-width: 735px) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .product {
+    width: 48%; /* Ajustez la largeur selon vos besoins */
+    margin: 20px; /* Ajustez la marge selon vos besoins */
+  }
+}
+
+/* Pour écrans étroits, affiche 1 produit par ligne */
+@media (max-width: 450px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 100%;
+    margin: 5px; /* Ajustez la marge selon vos besoins */
+  }
+}

@@ -1,0 +1,92 @@
+
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+   
+  }
+ .carousel-inner{
+  height: 530px;
+ }
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    left:80px
+    
+  }
+  
+  .carousel-item {
+    height: 32rem;
+  }
+
+  
+  #promo1{
+    background-image: url('../../Images/promo1.png');  
+    margin:0px;
+    background-size:auto ;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: auto;
+    height: 600px;
+    width: 100%;
+    background-color: #999690;
+    background-position: center top;
+}
+#promo2{
+  background-image: url('../../Images/promo2.png');  
+  margin:0px;
+  background-size: cover;
+  background-repeat: round;
+  position: relative;
+  overflow-x: hidden;
+  height: 600px;
+  width: 100%;
+}
+#promo3 {
+  background-image: url('../../Images/promo11.png');  
+  margin: 0px;
+  background-size:auto ;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: auto;
+  height: 600px;
+  width: 100%;
+  background-color: #D9CAC4;
+  background-position: center top; /* Vous pouvez ajuster la valeur 'right top' selon vos besoins */
+}
+
+
+#heading1{
+    font-size: 70px;
+}
+.heading2{
+  font-size: 70px;  
+  color: white;
+}
+
+  
+
+
+  @media (max-width: 768px){
+    #heading1{
+      font-size: 50px;
+  }
+  .heading2{
+    font-size: 50px;  
+    
+  }
+  .browse{
+    font-size: 12px; 
+  }
+  .carousel-caption {
+   
+    left:30px
+    
+  }
+
+  }
+  
+ 
