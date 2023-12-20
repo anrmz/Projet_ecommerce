@@ -12,7 +12,8 @@ root.render(
     <BrowserRouter  basename="Projet-ecommerce">
     <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 reportWebVitals();
