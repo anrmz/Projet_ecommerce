@@ -8,7 +8,7 @@ export const Shop = () => {
   return (
     <div className="shop">
       <div className="shopTitle">
-        <h1>ASDA Boy's clothes </h1>
+        <h1>Boy's clothes </h1>
       </div>
 
       <div className="products">
@@ -17,7 +17,7 @@ export const Shop = () => {
         ))}
       </div>
       <div className="shopTitle">
-        <h1>ASDA Girl's clothes </h1>
+        <h1>Girl's clothes </h1>
       </div>
       <br />
       <div className="products">

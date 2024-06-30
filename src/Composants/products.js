@@ -12,14 +12,14 @@ export const PRODUCTS = [
   {
     id: 1,
     productName: "blue sweater",
-    desc: "ASDA Men's round neck sweater color blue 90% coton",
+    desc: " Men's round neck sweater color blue 90% coton",
     price: 449,
     productImage: product1,
   },
   {
     id: 2,
     productName: "Blouson bombardier homme",
-    desc: "ASDA Men's bomber jacket color brown",
+    desc: " Men's bomber jacket color brown",
     price: 549,
     productImage: product2,
   },

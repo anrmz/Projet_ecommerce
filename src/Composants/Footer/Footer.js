@@ -47,7 +47,7 @@ function Footer() {
 
                 <dir className="lastPartFooter d-flex justify-content-center align-items-center flex-column flex-lg-row mt-5 px-0 pb-4 pb-lg-0 px-2 px-lg-5 mx-0 ">
                       <div className='order-1 order-lg-0 d-flex justify-content-center align-items-center flex-column flex-lg-row ms-lg-5'>
-                          <p className=' mt-lg-3'> &copy; All Rights Reserved. By <a href="/" target='_blank' style={{ color:"#feebf3" }}>ASDA FASHION</a> </p>
+                          <p className=' mt-lg-3'> &copy; All Rights Reserved. By <a href="/" target='_blank' style={{ color:"#feebf3" }}></a> </p>
                           
                       </div>
                       <dir className="order-0 order-lg-1 footerSocials ms-lg-auto d-flex justify-content-center px-0 me-lg-5">

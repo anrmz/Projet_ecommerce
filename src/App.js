@@ -6,7 +6,6 @@ import Women from './Composants/Category/women/womenproduct';
 import {Shop} from './Composants/Pages/Men/shop';
 import Kids from './Composants/Category/kids/kidsproduct';
 import {Cart} from './Composants/Pages/Cart/cart';
-import LoginSignup from './Composants/Pages/Auth/LoginSignUp';
 import { ShopContextProvider } from './Composants/context/shop-context';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
   <Route path='/womens' element={<Women/>}></Route>
   <Route path='/mens' element={<Shop/>}></Route>
   <Route path='/kids' element={<Kids/>}></Route>
-  <Route path='/LoginSignUp' element={<LoginSignup/>}></Route>
   <Route path='/cart' element={<Cart/>}></Route>
   </Routes>
  

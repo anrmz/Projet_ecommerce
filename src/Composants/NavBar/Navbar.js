@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navbar.css';
-import logo from '../../Images/Frame 1.png';
 import { Link } from 'react-router-dom';
 
 export default function NavBarHome() {
@@ -15,7 +14,7 @@ export default function NavBarHome() {
       <Navbar expand="lg" className="navbar navbar-expand-md navbar-light fixed-top bg-light px-3 m-0">
         
           <a href='/'>
-            <Navbar.Brand><img src={logo} alt="icone flèche" /></Navbar.Brand>
+            <Navbar.Brand></Navbar.Brand>
           </a>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="navbarCollapse" className="me-auto justify-content-start m-3">
@@ -33,13 +32,6 @@ export default function NavBarHome() {
 
           <Navbar.Collapse id="navbarCollapse" className="ml-auto justify-content-end">
             <div className='d-flex justify-content-start m-3'>
-              <Nav.Link href='/LoginSignUp' >
-                <span className="icon-container p-0 mx-2 ">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="38" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z" />
-                  </svg>
-                </span>
-              </Nav.Link>
               <Link to='/cart' className='text-black nav-link'>
                 <span className="icon-container p-0w  cart " >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="38" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
